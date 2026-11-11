@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panjang Busur & Luas Juring - MathFun SMP</title>
+    <link rel="stylesheet" href="../UTS.css">
+</head>
+<body id="top">
+
+    <header>
+        <div class="logo-container">
+            <h1>MathFun - Lingkaran SMP Kelas VIII</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../materi.html" class="active">Materi</a></li>
+                <li><a href="../kuis.html">Kuis</a></li>
+                <li><a href="../glosarium.html">Glosarium</a></li>
+                <li><a href="../profil.html">Profil Pengembang</a></li>
+                <li><a href="../referensi.html">Referensi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nav-back">
+            <a href="../materi.html" class="btn btn-secondary">⬅️ Kembali ke Tabel Utama Materi</a>
+        </div>
+
+        <section class="detail-box">
+            <h2>5. Panjang Busur & Luas Juring</h2>
+            
+            <article>
+                <h3>Definisi & Konsep</h3>
+                <p><b>Panjang busur</b> adalah bagian dari keliling lingkaran yang terletak di antara dua titik pada lingkaran tersebut. Panjang suatu busur lingkaran berbanding lurus dengan besar sudut pusat yang menghadap busur tersebut. Semakin besar sudut pusatnya (&alpha;), maka semakin panjang pula ukuran busurnya. Hubungan ini menggunakan perbandingan terhadap sudut satu lingkaran penuh (360&deg;).</p>
+                <p><b>Luas juring</b> adalah daerah di dalam lingkaran yang dibatasi oleh dua buah jari-jari dan sebuah busur lingkaran yang diapit oleh kedua jari-jari tersebut. Serupa dengan panjang busur, luas juring juga berbanding lurus dengan besar sudut pusatnya (&alpha;). Jika sudut pusatnya seperempat lingkaran (90&deg;), maka luas juringnya pun seperempat dari luas lingkaran keseluruhan.</p>
+            </article>
+
+            <article>
+                <h3>Rumus Kunci</h3>
+                <p><b>Panjang Busur = (&alpha; / 360&deg;) &times; K</b></p>
+                <p><b>Luas Juring = (&alpha; / 360&deg;) &times; L</b></p>
+            </article>
+
+            <article>
+                <h3>Video Pembelajaran Interaktif</h3>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube-nocookie.com/embed/Rr0PhbkD9V8" 
+                        title="Video Pembelajaran Panjang Busur dan Luas Juring Lingkaran" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="video-source-note"><b>Sumber Video Edukasi:</b> YouTube Matematika Hebat</p>
+            </article>
+
+            <article>
+                <h3>Contoh Demonstrasi Soal</h3>
+                <details open>
+                    <summary>Lihat Contoh Soal Demonstrasi</summary>
+                    <p><b>Soal:</b> Hitung panjang busur jika sudut pusat 90&deg; dan keliling lingkaran 88 cm!</p>
+                    <p><b>Pembahasan:</b> (90 / 360) &times; 88 = 1/4 &times; 88 = 22 cm.</p>
+                </details>
+            </article>
+
+            <article class="latihan-section-box">
+                <h3>Latihan Soal Mandiri Sub-Bab 5</h3>
+                <p>Pilihlah salah satu jawaban yang tepat. Pembahasan akan terbuka setelah Anda menekan tombol submit di bawah.</p>
+
+                <form onsubmit="submitLatihanBab(event)">
+                    <div class="question-item-box">
+                        <h4>Soal Latihan 5</h4>
+                        <p>Jika luas juring lingkaran dengan sudut pusat 45&deg; adalah 22 cm<sup>2</sup>, berapakah luas seluruh lingkaran tersebut?</p>
+                        
+                        <label><input type="radio" name="lat5" value="A"> A. 88 cm<sup>2</sup></label>
+                        <label><input type="radio" name="lat5" value="B"> B. 132 cm<sup>2</sup></label>
+                        <label><input type="radio" name="lat5" value="C"> C. 176 cm<sup>2</sup></label>
+                        <label><input type="radio" name="lat5" value="D"> D. 352 cm<sup>2</sup></label>
+
+                        <details class="pembahasan-latihan pembahasan-box">
+                            <summary>🔍 Kunci Jawaban & Pembahasan</summary>
+                            <p class="pembahasan-content">
+                                <b>Kunci Jawaban: C (176 cm<sup>2</sup>)</b><br>
+                                <b>Pembahasan:</b> (45&deg;/360&deg;) &times; Luas Total = 22 &rArr; (1/8) &times; Luas Total = 22 &rArr; Luas Total = 22 &times; 8 = 176 cm<sup>2</sup>.
+                            </p>
+                        </details>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim Jawaban Latihan 🚀</button>
+                </form>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website Pembelajaran Lingkaran SMP Kelas VIII. Hak Cipta Dilindungi.</p>
+        <p><a href="#top">Kembali ke atas halaman ⬆️</a></p>
+    </footer>
+
+    <script>
+        function submitLatihanBab(event) {
+            event.preventDefault();
+            let semuaPembahasan = event.target.querySelectorAll('.pembahasan-latihan');
+            semuaPembahasan.forEach(p => { 
+                p.style.display = 'block'; 
+                p.open = true; 
+            });
+        }
+    </script>
+</body>
+</html>

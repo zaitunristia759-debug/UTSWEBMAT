@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas Lingkaran - MathFun SMP</title>
+    <link rel="stylesheet" href="../UTS.css">
+</head>
+<body id="top">
+
+    <header>
+        <div class="logo-container">
+            <h1>MathFun - Lingkaran SMP Kelas VIII</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../materi.html" class="active">Materi</a></li>
+                <li><a href="../kuis.html">Kuis</a></li>
+                <li><a href="../glosarium.html">Glosarium</a></li>
+                <li><a href="../profil.html">Profil Pengembang</a></li>
+                <li><a href="../referensi.html">Referensi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nav-back">
+            <a href="../materi.html" class="btn btn-secondary">⬅️ Kembali ke Tabel Utama Materi</a>
+        </div>
+
+        <section class="detail-box">
+            <h2>3. Luas Lingkaran</h2>
+            
+            <article>
+                <h3>Definisi & Konsep</h3>
+                <p>Luas lingkaran adalah besarnya ukuran daerah bidang datar yang dibatasi oleh kurva tertutup atau keliling lingkaran. Dengan kata lain, luas lingkaran mencakup seluruh permukaan atau wilayah dua dimensi yang ada di dalam lingkaran tersebut.</p>
+                <p>Secara konseptual, luas lingkaran dapat dipahami melalui pendekatan pemotongan bangun ruang/datar:</p>
+                <ul>
+                    <li>Jika sebuah lingkaran dipotong-potong menjadi juring-juring kecil yang banyak (misalnya 8, 16, atau 32 bagian) lalu disusun berselang-seling, susunan tersebut akan membentuk bangun yang mendekati bentuk persegi panjang.</li>
+                    <li>Dalam susunan tersebut, panjang dari persegi panjang mewakili setengah dari keliling lingkaran <b>(1/2 &times; = &pi;r)</b>, dan lebarnya mewakili jari-jari lingkaran (r).</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Rumus Kunci</h3>
+                <p><b>L = &pi; &times; r<sup>2</sup></b></p> 
+                <p><b>L = 1/4 &times; &pi; &times; d<sup>2</sup></b></p>
+            </article>
+
+            <article>
+                <h3>Video Pembelajaran Interaktif</h3>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/BPe5Sf-Kxyw?si=eyW2Nm3EQupRIkbc" 
+                        title="Video Pembelajaran Cara Menghitung Luas Lingkaran" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="video-source-note"><b>Sumber Video Edukasi:</b> YouTube RUMAH GEMAR MATEMATIKA</p>
+            </article>
+
+            <article>
+                <h3>Contoh Demonstrasi Soal</h3>
+                <details open>
+                    <summary>Lihat Contoh Soal Demonstrasi</summary>
+                    <p><b>Soal:</b> Hitunglah luas lingkaran jika jari-jarinya 14 cm! (&pi; = 22/7)</p>
+                    <p><b>Pembahasan:</b> L = (22/7) &times; 14 &times; 14 = 616 cm<sup>2</sup>.</p>
+                </details>
+            </article>
+
+            <article class="latihan-section-box">
+                <h3>Latihan Soal Mandiri Sub-Bab 3</h3>
+                <p>Pilihlah salah satu jawaban yang tepat. Pembahasan akan terbuka setelah Anda menekan tombol submit di bawah.</p>
+
+                <form onsubmit="submitLatihanBab(event)">
+                    <div class="question-item-box">
+                        <h4>Soal Latihan 3</h4>
+                        <p>Jika luas suatu lingkaran adalah 1.386 cm<sup>2</sup> dengan &pi; = 22/7, maka jari-jari lingkaran tersebut adalah...</p>
+                        
+                        <label><input type="radio" name="lat3" value="A"> A. 7 cm</label>
+                        <label><input type="radio" name="lat3" value="B"> B. 14 cm</label>
+                        <label><input type="radio" name="lat3" value="C"> C. 21 cm</label>
+                        <label><input type="radio" name="lat3" value="D"> D. 28 cm</label>
+
+                        <details class="pembahasan-latihan pembahasan-box">
+                            <summary>🔍 Kunci Jawaban & Pembahasan</summary>
+                            <p class="pembahasan-content">
+                                <b>Kunci Jawaban: C (21 cm)</b><br>
+                                <b>Pembahasan:</b> L = &pi; &times; r<sup>2</sup> &rArr; 1.386 = (22/7) &times; r<sup>2</sup> &rArr; r<sup>2</sup> = (1.386 &times; 7)/22 = 441 &rArr; r = &radic;441 = 21 cm.
+                            </p>
+                        </details>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim Jawaban Latihan 🚀</button>
+                </form>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website Pembelajaran Lingkaran SMP Kelas VIII. Hak Cipta Dilindungi.</p>
+        <p><a href="#top">Kembali ke atas halaman ⬆️</a></p>
+    </footer>
+
+    <script>
+        function submitLatihanBab(event) {
+            event.preventDefault();
+            let semuaPembahasan = event.target.querySelectorAll('.pembahasan-latihan');
+            semuaPembahasan.forEach(p => { 
+                p.style.display = 'block'; 
+                p.open = true; 
+            });
+        }
+    </script>
+</body>
+</html>

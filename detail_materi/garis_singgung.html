@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garis Singgung Lingkaran - MathFun SMP</title>
+    <link rel="stylesheet" href="../UTS.css">
+</head>
+<body id="top">
+
+    <header>
+        <div class="logo-container">
+            <h1>MathFun - Lingkaran SMP Kelas VIII</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../materi.html" class="active">Materi</a></li>
+                <li><a href="../kuis.html">Kuis</a></li>
+                <li><a href="../glosarium.html">Glosarium</a></li>
+                <li><a href="../profil.html">Profil Pengembang</a></li>
+                <li><a href="../referensi.html">Referensi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nav-back">
+            <a href="../materi.html" class="btn btn-secondary">⬅️ Kembali ke Tabel Utama Materi</a>
+        </div>
+
+        <section class="detail-box">
+            <h2>7. Garis Singgung Lingkaran</h2>
+            
+            <article>
+                <h3>Definisi & Konsep</h3>
+                <p><b>Garis singgung lingkaran</b> adalah sebuah garis lurus yang memotong suatu lingkaran tepat di satu titik (yang disebut sebagai titik singgung).</p>
+                <p><b>Konsep Dasar Garis Singgung</b></p>
+                <ul>
+                    <li>Sifat Tegak Lurus: Jari-jari lingkaran yang ditarik melalui titik singgung selalu tegak lurus (90&deg;) terhadap garis singgung tersebut.</li>
+                    <li>
+                        <p>Garis Singgung Persekutuan: Garis singgung yang menyinggung dua buah lingkaran sekaligus. Ini terbagi menjadi dua jenis:</p>
+                        <ul>
+                            <li>Garis Singgung Persekutuan Luar (GSPL): Garis singgung yang berada di bagian luar posisi kedua lingkaran.</li>
+                            <li>Garis Singgung Persekutuan Dalam (GSPD): Garis singgung yang berada di antara kedua lingkaran (saling menyilang di antara jarak pusatnya).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Rumus Kunci GS Persekutuan Dalam</h3>
+                <p><b>d = &radic;(p<sup>2</sup> - (R + r)<sup>2</sup>)</b></p>
+                <p><b>l = &radic;(p<sup>2</sup> - (R + r)<sup>2</sup>)</b></p>
+            </article>
+
+            <article>
+                <h3>Video Pembelajaran Interaktif</h3>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube-nocookie.com/embed/hEk8NoITRqI" 
+                        title="Video Pembelajaran Garis Singgung Persekutuan Luar dan Dalam Dua Lingkaran" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="video-source-note"><b>Sumber Video Edukasi:</b> YouTube Matematika Hebat</p>
+            </article>
+
+            <article>
+                <h3>Contoh Demonstrasi Soal</h3>
+                <details open>
+                    <summary>Lihat Contoh Soal Demonstrasi</summary>
+                    <p><b>Soal:</b> Dua lingkaran berjari-jari 7 cm dan 2 cm dengan jarak pusat 13 cm. Berapa panjang garis singgung persekutuan luar?</p>
+                    <p><b>Pembahasan:</b> d = &radic;(13<sup>2</sup> - (7-2)<sup>2</sup>) = &radic;(169 - 25) = 12 cm.</p>
+                </details>
+            </article>
+
+            <article class="latihan-section-box">
+                <h3>Latihan Soal Mandiri Sub-Bab 7</h3>
+                <p>Pilihlah salah satu jawaban yang tepat. Pembahasan akan terbuka setelah Anda menekan tombol submit di bawah.</p>
+
+                <form onsubmit="submitLatihanBab(event)">
+                    <div class="question-item-box">
+                        <h4>Soal Latihan 7</h4>
+                        <p>Panjang garis singgung persekutuan dalam dua lingkaran adalah 16 cm. Jika jarak kedua pusatnya 20 cm dan jari-jari satu lingkaran 7 cm, berapa jari-jari lingkaran lainnya?</p>
+                        
+                        <label><input type="radio" name="lat7" value="A"> A. 3 cm</label>
+                        <label><input type="radio" name="lat7" value="B"> B. 5 cm</label>
+                        <label><input type="radio" name="lat7" value="C"> C. 8 cm</label>
+                        <label><input type="radio" name="lat7" value="D"> D. 12 cm</label>
+
+                        <details class="pembahasan-latihan pembahasan-box">
+                            <summary>🔍 Kunci Jawaban & Pembahasan</summary>
+                            <p class="pembahasan-content">
+                                <b>Kunci Jawaban: B (5 cm)</b><br>
+                                <b>Pembahasan:</b> d = &radic;(p<sup>2</sup> - (R+r)<sup>2</sup>) &rArr; 16 = &radic;(20<sup>2</sup> - (7+r)<sup>2</sup>) &rArr; 256 = 400 - (7+r)<sup>2</sup> &rArr; (7+r)<sup>2</sup> = 144 &rArr; 7+r = 12 &rArr; r = 5 cm.
+                            </p>
+                        </details>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim Jawaban Latihan 🚀</button>
+                </form>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website Pembelajaran Lingkaran SMP Kelas VIII. Hak Cipta Dilindungi.</p>
+        <p><a href="#top">Kembali ke atas halaman ⬆️</a></p>
+    </footer>
+
+    <script>
+        function submitLatihanBab(event) {
+            event.preventDefault();
+            let semuaPembahasan = event.target.querySelectorAll('.pembahasan-latihan');
+            semuaPembahasan.forEach(p => { 
+                p.style.display = 'block'; 
+                p.open = true; 
+            });
+        }
+    </script>
+</body>
+</html>

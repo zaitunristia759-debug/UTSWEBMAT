@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudut Pusat & Sudut Keliling - MathFun SMP</title>
+    <link rel="stylesheet" href="../UTS.css">
+</head>
+<body id="top">
+
+    <header>
+        <div class="logo-container">
+            <h1>MathFun - Lingkaran SMP Kelas VIII</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../materi.html" class="active">Materi</a></li>
+                <li><a href="../kuis.html">Kuis</a></li>
+                <li><a href="../glosarium.html">Glosarium</a></li>
+                <li><a href="../profil.html">Profil Pengembang</a></li>
+                <li><a href="../referensi.html">Referensi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nav-back">
+            <a href="../materi.html" class="btn btn-secondary">⬅️ Kembali ke Tabel Utama Materi</a>
+        </div>
+
+        <section class="detail-box">
+            <h2>6. Sudut Pusat & Sudut Keliling</h2>
+            
+            <article>
+                <h3>Definisi & Konsep</h3>
+                <p><b>Sudut pusat</b> adalah sudut yang dibentuk oleh dua buah jari-jari yang berpotongan tepat di titik pusat lingkaran. Kaki-kaki sudutnya memancar dari titik pusat menuju ke garis lengkung (tepi) lingkaran. Titik puncak dari sudut pusat ini berada di tengah-tengah (pusat) lingkaran.</p>
+                <p><b>Sudut keliling</b> adalah sudut yang dibentuk oleh dua buah tali busur yang berpotongan dan titik sudutnya terletak pada keliling (garis lengkung) lingkaran. Berbeda dengan sudut pusat, titik puncak dari sudut keliling menempel di tepi lingkaran.</p>
+            </article>
+
+            <article>
+                <h3>Rumus Kunci</h3>
+                <p><b>Sudut Pusat = 2 &times; Sudut Keliling</b> (jika menghadap busur yang sama).</p>
+                <p><b>Sudut Keliling = 1/2 &times; Sudut Pusat</b></p>
+            </article>
+
+            <article>
+                <h3>Video Pembelajaran Interaktif</h3>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/isYAqHGRppU?si=PjFFFbFtTXSWYupr" 
+                        title="Video Pembelajaran Sudut Pusat dan Sudut Keliling Lingkaran" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="video-source-note"><b>Sumber Video Edukasi:</b> YouTube Matematika Hebat</p>
+            </article>
+
+            <article>
+                <h3>Contoh Demonstrasi Soal</h3>
+                <details open>
+                    <summary>Lihat Contoh Soal Demonstrasi</summary>
+                    <p><b>Soal:</b> Jika sudut pusat 100&deg;, berapakah besar sudut kelilingnya?</p>
+                    <p><b>Pembahasan:</b> Sudut Keliling = 100&deg; / 2 = 50&deg;.</p>
+                </details>
+            </article>
+
+            <article class="latihan-section-box">
+                <h3>Latihan Soal Mandiri Sub-Bab 6</h3>
+                <p>Pilihlah salah satu jawaban yang tepat. Pembahasan akan terbuka setelah Anda menekan tombol submit di bawah.</p>
+
+                <form onsubmit="submitLatihanBab(event)">
+                    <div class="question-item-box">
+                        <h4>Soal Latihan 6</h4>
+                        <p>Dua buah sudut keliling &ang;ABC dan &ang;ADC menghadap ke busur yang sama. Jika besar &ang;ABC = 55&deg;, berapakah besar &ang;ADC?</p>
+                        
+                        <label><input type="radio" name="lat6" value="A"> A. 27,5&deg;</label>
+                        <label><input type="radio" name="lat6" value="B"> B. 55&deg;</label>
+                        <label><input type="radio" name="lat6" value="C"> C. 110&deg;</label>
+                        <label><input type="radio" name="lat6" value="D"> D. 125&deg;</label>
+
+                        <details class="pembahasan-latihan pembahasan-box">
+                            <summary>🔍 Kunci Jawaban & Pembahasan</summary>
+                            <p class="pembahasan-content">
+                                <b>Kunci Jawaban: B (55&deg;)</b><br>
+                                <b>Pembahasan:</b> Semua sudut keliling yang menghadap ke busur sama memiliki besar sudut yang identik, sehingga &ang;ADC = &ang;ABC = 55&deg;.
+                            </p>
+                        </details>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim Jawaban Latihan 🚀</button>
+                </form>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website Pembelajaran Lingkaran SMP Kelas VIII. Hak Cipta Dilindungi.</p>
+        <p><a href="#top">Kembali ke atas halaman ⬆️</a></p>
+    </footer>
+
+    <script>
+        function submitLatihanBab(event) {
+            event.preventDefault();
+            let semuaPembahasan = event.target.querySelectorAll('.pembahasan-latihan');
+            semuaPembahasan.forEach(p => { 
+                p.style.display = 'block'; 
+                p.open = true; 
+            });
+        }
+    </script>
+</body>
+</html>

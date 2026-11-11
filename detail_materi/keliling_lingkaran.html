@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keliling Lingkaran - MathFun SMP</title>
+    <link rel="stylesheet" href="../UTS.css">
+</head>
+<body id="top">
+
+    <header>
+        <div class="logo-container">
+            <h1>MathFun - Lingkaran SMP Kelas VIII</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../materi.html" class="active">Materi</a></li>
+                <li><a href="../kuis.html">Kuis</a></li>
+                <li><a href="../glosarium.html">Glosarium</a></li>
+                <li><a href="../profil.html">Profil Pengembang</a></li>
+                <li><a href="../referensi.html">Referensi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nav-back">
+            <a href="../materi.html" class="btn btn-secondary">⬅️ Kembali ke Tabel Utama Materi</a>
+        </div>
+
+        <section class="detail-box">
+            <h2>2. Keliling Lingkaran</h2>
+            
+            <article>
+                <h3>Definisi & Konsep</h3>
+                <p>Keliling lingkaran adalah panjang kurva tertutup atau batas luar yang mengelilingi suatu lingkaran penuh. Dengan kata lain, jika Anda membentangkan garis lengkung yang membentuk tepi lingkaran menjadi garis lurus, panjang garis tersebut adalah keliling lingkaran.</p>
+                <p>Konsep keliling lingkaran ditemukan dari perbandingan tetap antara keliling lingkaran (K) dengan diameternya (d). Perbandingan ini menghasilkan sebuah konstanta matematika yang dinamakan <b>Pi (&pi;).</b></p>
+                <ul>
+                    <li>Nilai pendekatan untuk <b>&pi;</b> adalah 22/7 (digunakan jika jari-jari atau diameter kelipatan 7).
+                    <li>Nilai <b>&pi;</b> 3,14 (untuk nilai lainnya).</li>
+                    <li>Hubungan ini menunjukkan bahwa keliling lingkaran selalu berbanding lurus dengan panjang diameternya.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Rumus Kunci</h3>
+                <p><b>K = 2 &times; &pi; &times; r</b></p>
+                <p><b>K = &pi; &times; d</b></p>
+            </article>
+
+            <article>
+                <h3>Video Pembelajaran Interaktif</h3>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube-nocookie.com/embed/60PPkkamPQk" 
+                        title="Video Pembelajaran Cara Menghitung Keliling Lingkaran" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="video-source-note"><b>Sumber Video Edukasi:</b> YouTube RUMAH GEMAR MATEMATIKA</p>
+            </article>
+
+            <article>
+                <h3>Contoh Demonstrasi Soal</h3>
+                <details open>
+                    <summary>Lihat Contoh Soal Demonstrasi</summary>
+                    <p><b>Soal:</b> Hitunglah keliling lingkaran dengan jari-jari 7 cm! (&pi; = 22/7)</p>
+                    <p><b>Pembahasan:</b> K = 2 &times; (22/7) &times; 7 = 44 cm.</p>
+                </details>
+            </article>
+
+            <article class="latihan-section-box">
+                <h3>Latihan Soal Mandiri Sub-Bab 2</h3>
+                <p>Pilihlah salah satu jawaban yang tepat. Pembahasan akan terbuka setelah Anda menekan tombol submit di bawah.</p>
+
+                <form onsubmit="submitLatihanBab(event)">
+                    <div class="question-item-box">
+                        <h4>Soal Latihan 2</h4>
+                        <p>Sebuah lingkaran memiliki keliling 132 cm. Jika nilai &pi; = 22/7, berapakah diameter lingkaran tersebut?</p>
+                        
+                        <label><input type="radio" name="lat2" value="A"> A. 21 cm</label>
+                        <label><input type="radio" name="lat2" value="B"> B. 28 cm</label>
+                        <label><input type="radio" name="lat2" value="C"> C. 42 cm</label>
+                        <label><input type="radio" name="lat2" value="D"> D. 84 cm</label>
+
+                        <details class="pembahasan-latihan pembahasan-box">
+                            <summary>🔍 Kunci Jawaban & Pembahasan</summary>
+                            <p class="pembahasan-content">
+                                <b>Kunci Jawaban: C (42 cm)</b><br>
+                                <b>Pembahasan:</b> K = &pi; &times; d &rArr; 132 = (22/7) &times; d &rArr; d = (132 &times; 7) / 22 = 42 cm.
+                            </p>
+                        </details>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim Jawaban Latihan 🚀</button>
+                </form>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website Pembelajaran Lingkaran SMP Kelas VIII. Hak Cipta Dilindungi.</p>
+        <p><a href="#top">Kembali ke atas halaman ⬆️</a></p>
+    </footer>
+
+    <script>
+        function submitLatihanBab(event) {
+            event.preventDefault();
+            let semuaPembahasan = event.target.querySelectorAll('.pembahasan-latihan');
+            semuaPembahasan.forEach(p => { 
+                p.style.display = 'block'; 
+                p.open = true; 
+            });
+        }
+    </script>
+</body>
+</html>

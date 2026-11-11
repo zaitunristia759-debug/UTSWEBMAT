@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Lingkaran SMP Kelas VIII - MathFun</title>
+    <link rel="stylesheet" href="UTS.css">
+</head>
+<body id="top">
+
+    <header>
+        <div class="logo-container">
+            <h1>MathFun - Lingkaran SMP Kelas VIII</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="kuis.html" class="active">Kuis</a></li>
+                <li><a href="glosarium.html">Glosarium</a></li>
+                <li><a href="profil.html">Profil Pengembang</a></li>
+                <li><a href="referensi.html">Referensi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz-section">
+            <h2>Kuis Evaluasi Topik Lingkaran SMP Kelas VIII (15 Soal)</h2>
+            <p>Pilihlah salah satu opsi jawaban A, B, C, atau D. Kunci jawaban dan pembahasan akan muncul otomatis setelah Anda menekan tombol kirim.</p>
+
+            <!-- Kotak untuk menampilkan skor hasil kuis -->
+            <div id="hasil-skor"></div>
+
+            <form id="formKuis" class="quiz-form" onsubmit="prosesKuis(event)">
+                
+                <!-- SOAL 1 -->
+                <div class="question-card">
+                    <span class="badge badge-easy">Topik: Unsur Lingkaran | Mudah</span>
+                    <h4>1. Garis lurus yang menghubungkan dua titik pada kurva lingkaran melalui titik pusat disebut...</h4>
+                    <label><input type="radio" name="q1" value="A"> A. Jari-jari</label><br>
+                    <label><input type="radio" name="q1" value="B"> B. Diameter</label><br>
+                    <label><input type="radio" name="q1" value="C"> C. Tali Busur</label><br>
+                    <label><input type="radio" name="q1" value="D"> D. Apotema</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: B</b>. Diameter adalah garis lurus pembagi dua lingkaran yang melewati titik pusat (d = 2r).</p></details>
+                </div>
+
+                <!-- SOAL 2 -->
+                <div class="question-card">
+                    <span class="badge badge-easy">Topik: Keliling Lingkaran | Mudah</span>
+                    <h4>2. Rumus keliling lingkaran jika diketahui jari-jarinya r adalah...</h4>
+                    <label><input type="radio" name="q2" value="A"> A. K = &pi; &times; r<sup>2</sup></label><br>
+                    <label><input type="radio" name="q2" value="B"> B. K = 2 &times; &pi; &times; r</label><br>
+                    <label><input type="radio" name="q2" value="C"> C. K = 4 &times; &pi; &times; r</label><br>
+                    <label><input type="radio" name="q2" value="D"> D. K = 1/2 &times; &pi; &times; d</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: B</b>. Rumus keliling lingkaran adalah K = 2 &times; &pi; &times; r atau K = &pi; &times; d.</p></details>
+                </div>
+
+                <!-- SOAL 3 -->
+                <div class="question-card">
+                    <span class="badge badge-easy">Topik: Luas Lingkaran | Mudah</span>
+                    <h4>3. Jika jari-jari lingkaran adalah 7 cm, maka luas lingkaran tersebut adalah... (&pi; = 22/7)</h4>
+                    <label><input type="radio" name="q3" value="A"> A. 44 cm<sup>2</sup></label><br>
+                    <label><input type="radio" name="q3" value="B"> B. 88 cm<sup>2</sup></label><br>
+                    <label><input type="radio" name="q3" value="C"> C. 154 cm<sup>2</sup></label><br>
+                    <label><input type="radio" name="q3" value="D"> D. 308 cm<sup>2</sup></label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: C</b>. L = (22/7) &times; 7 &times; 7 = 154 cm<sup>2</sup>.</p></details>
+                </div>
+
+                <!-- SOAL 4 -->
+                <div class="question-card">
+                    <span class="badge badge-easy">Topik: Keliling Lingkaran | Mudah</span>
+                    <h4>4. Sebuah lingkaran memiliki diameter 20 cm. Keliling lingkaran tersebut adalah... (&pi; = 3,14)</h4>
+                    <label><input type="radio" name="q4" value="A"> A. 31,4 cm</label><br>
+                    <label><input type="radio" name="q4" value="B"> B. 62,8 cm</label><br>
+                    <label><input type="radio" name="q4" value="C"> C. 314 cm</label><br>
+                    <label><input type="radio" name="q4" value="D"> D. 125,6 cm</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: B</b>. K = &pi; &times; d = 3,14 &times; 20 = 62,8 cm.</p></details>
+                </div>
+
+                <!-- SOAL 5 -->
+                <div class="question-card">
+                    <span class="badge badge-easy">Topik: Unsur Lingkaran | Mudah</span>
+                    <h4>5. Daerah di dalam lingkaran yang dibatasi oleh dua jari-jari dan sebuah busur dinamakan...</h4>
+                    <label><input type="radio" name="q5" value="A"> A. Tembereng</label><br>
+                    <label><input type="radio" name="q5" value="B"> B. Juring</label><br>
+                    <label><input type="radio" name="q5" value="C"> C. Apotema</label><br>
+                    <label><input type="radio" name="q5" value="D"> D. Tali busur</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: B</b>. Juring dibatasi dua jari-jari dan sebuah busur lingkaran.</p></details>
+                </div>
+
+                <!-- SOAL 6 -->
+                <div class="question-card">
+                    <span class="badge badge-medium">Topik: Sudut Lingkaran | Sedang</span>
+                    <h4>6. Jika sudut pusat AOB = 80&deg;, berapakah besar sudut keliling ACB yang menghadap busur sama?</h4>
+                    <label><input type="radio" name="q6" value="A"> A. 40&deg;</label><br>
+                    <label><input type="radio" name="q6" value="B"> B. 80&deg;</label><br>
+                    <label><input type="radio" name="q6" value="C"> C. 160&deg;</label><br>
+                    <label><input type="radio" name="q6" value="D"> D. 90&deg;</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: A</b>. Sudut Keliling = 1/2 &times; Sudut Pusat = 1/2 &times; 80&deg; = 40&deg;.</p></details>
+                </div>
+
+                <!-- SOAL 7 -->
+                <div class="question-card">
+                    <span class="badge badge-medium">Topik: Sudut Keliling | Sedang</span>
+                    <h4>7. Setiap sudut keliling yang menghadap diameter lingkaran besarnya adalah...</h4>
+                    <label><input type="radio" name="q7" value="A"> A. 45&deg;</label><br>
+                    <label><input type="radio" name="q7" value="B"> B. 60&deg;</label><br>
+                    <label><input type="radio" name="q7" value="C"> C. 90&deg;</label><br>
+                    <label><input type="radio" name="q7" value="D"> D. 180&deg;</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: C</b>. Sudut keliling yang menghadap diameter besarnya selalu siku-siku (90&deg;).</p></details>
+                </div>
+
+                <!-- SOAL 8 -->
+                <div class="question-card">
+                    <span class="badge badge-medium">Topik: Panjang Busur | Sedang</span>
+                    <h4>8. Panjang busur lingkaran dengan sudut pusat 90&deg; dan jari-jari 14 cm adalah...</h4>
+                    <label><input type="radio" name="q8" value="A"> A. 11 cm</label><br>
+                    <label><input type="radio" name="q8" value="B"> B. 22 cm</label><br>
+                    <label><input type="radio" name="q8" value="C"> C. 44 cm</label><br>
+                    <label><input type="radio" name="q8" value="D"> D. 88 cm</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: B</b>. Busur = (90/360) &times; 2 &times; (22/7) &times; 14 = 1/4 &times; 88 = 22 cm.</p></details>
+                </div>
+
+                <!-- SOAL 9 -->
+                <div class="question-card">
+                    <span class="badge badge-medium">Topik: Luas Juring | Sedang</span>
+                    <h4>9. Luas juring lingkaran dengan sudut pusat 60&deg; dan jari-jari 21 cm adalah... (&pi; = 22/7)</h4>
+                    <label><input type="radio" name="q9" value="A"> A. 231 cm<sup>2</sup></label><br>
+                    <label><input type="radio" name="q9" value="B"> B. 462 cm<sup>2</sup></label><br>
+                    <label><input type="radio" name="q9" value="C"> C. 154 cm<sup>2</sup></label><br>
+                    <label><input type="radio" name="q9" value="D"> D. 77 cm<sup>2</sup></label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: A</b>. Luas Juring = (60/360) &times; (22/7) &times; 21 &times; 21 = 1/6 &times; 1386 = 231 cm<sup>2</sup>.</p></details>
+                </div>
+
+                <!-- SOAL 10 -->
+                <div class="question-card">
+                    <span class="badge badge-medium">Topik: Garis Singgung | Sedang</span>
+                    <h4>10. Garis singgung lingkaran selalu membentuk sudut ... terhadap jari-jari yang melalui titik singgungnya.</h4>
+                    <label><input type="radio" name="q10" value="A"> A. 30&deg;</label><br>
+                    <label><input type="radio" name="q10" value="B"> B. 45&deg;</label><br>
+                    <label><input type="radio" name="q10" value="C"> C. 60&deg;</label><br>
+                    <label><input type="radio" name="q10" value="D"> D. 90&deg;</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: D</b>. Garis singgung selalu tegak lurus (90&deg;) terhadap jari-jari lingkaran di titik singgung.</p></details>
+                </div>
+
+                <!-- SOAL 11 -->
+                <div class="question-card">
+                    <span class="badge badge-hard">Topik: Aplikasi Lingkaran | Sulit (HOTS)</span>
+                    <h4>11. Sebuah roda sepeda berdiameter 56 cm berputar sebanyak 500 kali. Jarak yang ditempuh roda tersebut adalah...</h4>
+                    <label><input type="radio" name="q11" value="A"> A. 440 m</label><br>
+                    <label><input type="radio" name="q11" value="B"> B. 880 m</label><br>
+                    <label><input type="radio" name="q11" value="C"> C. 1.760 m</label><br>
+                    <label><input type="radio" name="q11" value="D"> D. 2.200 m</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: B</b>. K = (22/7) &times; 56 = 176 cm. Jarak = 176 cm &times; 500 = 88.000 cm = 880 m.</p></details>
+                </div>
+
+                <!-- SOAL 12 -->
+                <div class="question-card">
+                    <span class="badge badge-hard">Topik: Luas Tembereng | Sulit (HOTS)</span>
+                    <h4>12. Sebuah juring memiliki sudut pusat 90&deg; dan jari-jari 14 cm. Jika luas segitiga penutupnya 98 cm<sup>2</sup>, luas temberengnya adalah...</h4>
+                    <label><input type="radio" name="q12" value="A"> A. 56 cm<sup>2</sup></label><br>
+                    <label><input type="radio" name="q12" value="B"> B. 77 cm<sup>2</sup></label><br>
+                    <label><input type="radio" name="q12" value="C"> C. 98 cm<sup>2</sup></label><br>
+                    <label><input type="radio" name="q12" value="D"> D. 154 cm<sup>2</sup></label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: A</b>. Luas Juring = 154 cm<sup>2</sup>. Luas Tembereng = Luas Juring - Luas Segitiga = 154 - 98 = 56 cm<sup>2</sup>.</p></details>
+                </div>
+
+                <!-- SOAL 13 -->
+                <div class="question-card">
+                    <span class="badge badge-hard">Topik: Garis Singgung Persekutuan | Sulit (HOTS)</span>
+                    <h4>13. Dua lingkaran berjari-jari 7 cm dan 2 cm. Jarak kedua pusatnya 13 cm. Panjang garis singgung persekutuan luarnya adalah...</h4>
+                    <label><input type="radio" name="q13" value="A"> A. 10 cm</label><br>
+                    <label><input type="radio" name="q13" value="B"> B. 12 cm</label><br>
+                    <label><input type="radio" name="q13" value="C"> C. 15 cm</label><br>
+                    <label><input type="radio" name="q13" value="D"> D. 17 cm</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: B</b>. d = akar(13<sup>2</sup> - (7-2)<sup>2</sup>) = akar(169 - 25) = 12 cm.</p></details>
+                </div>
+
+                <!-- SOAL 14 -->
+                <div class="question-card">
+                    <span class="badge badge-hard">Topik: Sudut Segi-4 Tali Busur | Sulit (HOTS)</span>
+                    <h4>14. Pada segi empat tali busur ABCD, besar sudut A = 75&deg;. Besar sudut C yang berhadapan dengan sudut A adalah...</h4>
+                    <label><input type="radio" name="q14" value="A"> A. 75&deg;</label><br>
+                    <label><input type="radio" name="q14" value="B"> B. 90&deg;</label><br>
+                    <label><input type="radio" name="q14" value="C"> C. 105&deg;</label><br>
+                    <label><input type="radio" name="q14" value="D"> D. 180&deg;</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: C</b>. Sudut berhadapan segi-4 tali busur jumlahnya 180&deg;. Sudut C = 180&deg; - 75&deg; = 105&deg;.</p></details>
+                </div>
+
+                <!-- SOAL 15 -->
+                <div class="question-card">
+                    <span class="badge badge-hard">Topik: Lingkaran Dalam Segitiga | Sulit (HOTS)</span>
+                    <h4>15. Jari-jari lingkaran dalam segitiga siku-siku dengan sisi 6 cm, 8 cm, dan 10 cm adalah...</h4>
+                    <label><input type="radio" name="q15" value="A"> A. 1 cm</label><br>
+                    <label><input type="radio" name="q15" value="B"> B. 2 cm</label><br>
+                    <label><input type="radio" name="q15" value="C"> C. 3 cm</label><br>
+                    <label><input type="radio" name="q15" value="D"> D. 4 cm</label>
+                    <details class="kunci-jawaban"><summary>Kunci Jawaban & Pembahasan</summary><p><b>Jawaban: B</b>. r = Luas / s = 24 / 12 = 2 cm.</p></details>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Kirim Jawaban Kuis 🚀</button>
+                    <button type="reset" class="btn btn-secondary" onclick="resetKuis()">Reset Formulir 🔄</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website Pembelajaran Lingkaran SMP Kelas VIII. Hak Cipta Dilindungi.</p>
+        <p><a href="#top">Kembali ke atas halaman ⬆️</a></p>
+    </footer>
+
+    <!-- Script JavaScript untuk Menampilkan Pembahasan & Skor setelah Disubmit -->
+    <script>
+        const kunciJawabanBenar = {
+            q1: 'B', q2: 'B', q3: 'C', q4: 'B', q5: 'B',
+            q6: 'A', q7: 'C', q8: 'B', q9: 'A', q10: 'D',
+            q11: 'B', q12: 'A', q13: 'B', q14: 'C', q15: 'B'
+        };
+
+        function prosesKuis(event) {
+            event.preventDefault(); // Mencegah halaman reload
+            let skor = 0;
+            let totalSoal = Object.keys(kunciJawabanBenar).length;
+
+            // Cek jawaban tiap nomor
+            for (let soal in kunciJawabanBenar) {
+                let pilihanUser = document.querySelector(`input[name="${soal}"]:checked`);
+                if (pilihanUser && pilihanUser.value === kunciJawabanBenar[soal]) {
+                    skor++;
+                }
+            }
+
+            // Hitung nilai akhir (skor * (100 / totalSoal))
+            let nilaiAkhir = Math.round((skor / totalSoal) * 100);
+
+            // Tampilkan kotak skor
+            let divSkor = document.getElementById('hasil-skor');
+            divSkor.style.display = 'block';
+            divSkor.innerHTML = `🎉 Kuis Berhasil Disubmit!<br>Skor Anda: <b>${skor} dari ${totalSoal} soal benar</b> (Nilai: <b>${nilaiAkhir}</b>).<br><span style="font-size:0.85em; color:#d63031;">Kunci jawaban dan pembahasan kini telah terbuka di bawah setiap soal!</span>`;
+
+            // Tampilkan dan buka otomatis kotak pembahasan (details)
+            let semuaDetails = document.querySelectorAll('.kunci-jawaban');
+            semuaDetails.forEach(detil => {
+                detil.style.display = 'block';
+                detil.open = true; // Otomatis membuka isi <details>
+            });
+
+            // Gulir halaman ke atas agar skor terlihat
+            divSkor.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function resetKuis() {
+            let divSkor = document.getElementById('hasil-skor');
+            divSkor.style.display = 'none';
+            let semuaDetails = document.querySelectorAll('.kunci-jawaban');
+            semuaDetails.forEach(detil => {
+                detil.style.display = 'none';
+                detil.open = false;
+            });
+        }
+    </script>
+
+</body>
+</html>

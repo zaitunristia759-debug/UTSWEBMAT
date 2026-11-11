@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingkaran Dalam & Luar Segitiga - MathFun SMP</title>
+    <link rel="stylesheet" href="../UTS.css">
+</head>
+<body id="top">
+
+    <header>
+        <div class="logo-container">
+            <h1>MathFun - Lingkaran SMP Kelas VIII</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../materi.html" class="active">Materi</a></li>
+                <li><a href="../kuis.html">Kuis</a></li>
+                <li><a href="../glosarium.html">Glosarium</a></li>
+                <li><a href="../profil.html">Profil Pengembang</a></li>
+                <li><a href="../referensi.html">Referensi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nav-back">
+            <a href="../materi.html" class="btn btn-secondary">⬅️ Kembali ke Tabel Utama Materi</a>
+        </div>
+
+        <section class="detail-box">
+            <h2>8. Lingkaran Dalam & Luar Segitiga</h2>
+            
+            <article>
+                <h3>Definisi & Konsep</h3>
+                <p><b>Lingkaran dalam segitiga</b> adalah lingkaran yang terletak di dalam sebuah segitiga dan menyinggung secara pas ketiga sisi segitiga tersebut. Titik pusat lingkaran dalam (disebut incenter) diperoleh dari titik perpotongan ketiga garis bagi sudut pada segitiga.</p>
+                <p><b>Lingkaran luar segitiga</b> adalah lingkaran yang terletak di luar segitiga dan melalui ketiga titik sudut segitiga tersebut. Titik pusat lingkaran luar (disebut circumcenter) diperoleh dari titik perpotongan ketiga garis sumbu dari sisi-sisi segitiga.</p>
+            </article>
+
+            <article>
+                <h3>Rumus Kunci</h3>
+                <p><b>Jari-jari lingkaran dalam: r = L / s</b> (dimana s = setengah keliling segitiga).</p>
+                <p><b>Jari-jari lingkaran dalam: R = a &times; b &times; c/4 &times; L</b></p>
+            </article>
+
+            <article>
+                <h3>Video Pembelajaran Interaktif</h3>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube-nocookie.com/embed/zeAd04f8SsA" 
+                        title="Video Pembelajaran Lingkaran Dalam dan Lingkaran Luar Segitiga" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="video-source-note"><b>Sumber Video Edukasi:</b> YouTube Ifda Fadhliyah</p>
+            </article>
+
+            <article>
+                <h3>Contoh Demonstrasi Soal</h3>
+                <details open>
+                    <summary>Lihat Contoh Soal Demonstrasi</summary>
+                    <p><b>Soal:</b> Segitiga siku-siku dengan sisi 6 cm, 8 cm, dan 10 cm. Hitung jari-jari lingkaran dalamnya!</p>
+                    <p><b>Pembahasan:</b> Luas = 24 cm<sup>2</sup>, s = 12 cm, maka r = 24 / 12 = 2 cm.</p>
+                </details>
+            </article>
+
+            <article class="latihan-section-box">
+                <h3>Latihan Soal Mandiri Sub-Bab 8</h3>
+                <p>Pilihlah salah satu jawaban yang tepat. Pembahasan akan terbuka setelah Anda menekan tombol submit di bawah.</p>
+
+                <form onsubmit="submitLatihanBab(event)">
+                    <div class="question-item-box">
+                        <h4>Soal Latihan 8</h4>
+                        <p>Titik pusat dari lingkaran dalam suatu segitiga diperoleh dari perpotongan garis...</p>
+                        
+                        <label><input type="radio" name="lat8" value="A"> A. Sumbu sisi-sisi segitiga</label>
+                        <label><input type="radio" name="lat8" value="B"> B. Garis bagi sudut-sudut segitiga</label>
+                        <label><input type="radio" name="lat8" value="C"> C. Tinggi segitiga</label>
+                        <label><input type="radio" name="lat8" value="D"> D. Garis berat segitiga</label>
+
+                        <details class="pembahasan-latihan pembahasan-box">
+                            <summary>🔍 Kunci Jawaban & Pembahasan</summary>
+                            <p class="pembahasan-content">
+                                <b>Kunci Jawaban: B (Garis bagi sudut-sudut segitiga)</b><br>
+                                <b>Pembahasan:</b> Titik pusat lingkaran dalam segitiga (incenter) merupakan titik potong dari ketiga garis bagi sudut pada segitiga tersebut.
+                            </p>
+                        </details>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim Jawaban Latihan 🚀</button>
+                </form>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website Pembelajaran Lingkaran SMP Kelas VIII. Hak Cipta Dilindungi.</p>
+        <p><a href="#top">Kembali ke atas halaman ⬆️</a></p>
+    </footer>
+
+    <script>
+        function submitLatihanBab(event) {
+            event.preventDefault();
+            let semuaPembahasan = event.target.querySelectorAll('.pembahasan-latihan');
+            semuaPembahasan.forEach(p => { 
+                p.style.display = 'block'; 
+                p.open = true; 
+            });
+        }
+    </script>
+</body>
+</html>
